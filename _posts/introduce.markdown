@@ -3,7 +3,7 @@ title:  "League of Legends"
 subtitle: "League of Legends 소개"
 author: "JongHwan"
 avatar: "img/authors/vel.png"
-image: "img/LoL.png"
+image: "img/e.jpg"
 date:   2018-05-26 00:00:00
 ---
 
