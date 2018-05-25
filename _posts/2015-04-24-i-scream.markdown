@@ -1,9 +1,9 @@
 ---
 title:  "League of Legends"
 subtitle: "League of Legends 소개"
-author: "Wferr"
-avatar: "img/authors/wferr.png"
-image: "img/e.jpg"
+author: "JongHwan"
+avatar: "img/authors/vel.png"
+image: "img/LoL.png"
 date:   2018-05-26 00:00:00
 ---
 
