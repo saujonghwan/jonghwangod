@@ -1,89 +1,152 @@
----
-layout: compress
----
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ site.title }}</title>
-    <meta name="description" content="{{ site.description }}"/>
-    <meta name="keywords" content="{{ site.keywords }}"/>
-    <meta name="author" content="{{ site.author }}"/>
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css"/>
-    <link rel="stylesheet" type="text/css" href="css/modern-blog.css"/>
-    <!--[if IE]>
-    <script type="text/javascript" src="js/vendors/html5.min.js"></script>
-    <![endif]-->
-    <script>
-        if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
-            var root = document.getElementsByTagName('html')[0];
-            root.setAttribute('class', 'ff');
-        }
-    </script>
-</head>
-<body class="body">
-<div class="container">
-    <header class="header">
-        <h1>Modern Blog<span>A Clean, Fresh Minimal Look.</span></h1>
-        <nav class="links">
-            <a href="#"><i class="fa fa-twitter-square fa-3x"></i></a>
-            <a href="#"><i class="fa fa-instagram fa-3x"></i></a>
-            <a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
-            <a href="#"><i class="fa fa-tumblr-square fa-3x"></i></a>
-        </nav>
-    </header>
-    <div class="content">
-        <!-- trianglify pattern container -->
-        <div class="pattern pattern--hidden"></div>
-        <!-- cards -->
-        <div class="wrapper">
-            {% for post in site.posts %}
-            <div class="card" data-id="{{ post.id }}">
-                <div class="card__container card__container--closed">
-                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg"
-                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200"
-                         preserveAspectRatio="xMidYMid slice">
-                        <defs>
-                            <clipPath id="{{ post.id }}-clip-path">
-                                <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
-                            </clipPath>
-                        </defs>
-                        <image clip-path="url(#{{ post.id }}-clip-path)" width="1920" height="1200"
-                               xlink:href="{{ post.image }}"></image>
-                    </svg>
-                    <div class="card__content">
-                        <i class="card__btn-close fa fa-times"></i>
-                        <div class="card__caption">
-                            <h2 class="card__title">{{ post.title }}</h2>
-                            <p class="card__subtitle">{{ post.subtitle }}</p>
-                        </div>
-                        <div class="card__copy">
-                            <div class="meta">
-                                <img class="meta__avatar" src="{{ post.avatar }}"/>
-                                <span class="meta__author">{{ post.author }}</span>
-                                <span class="meta__date">{{ post.date | date: "%Y-%m-%d" }}</span>
-                            </div>
-                            {{ post.content }}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-            <!-- /cards -->
-        </div>
-    </div>
-    <!-- /container -->
+﻿<!DOCTYPE html>
+
+<title> Jong's Pages </title>
+
+<img class="bg" src="H:\캡스톤디자인\홈페이지만들기\images\background.jpg" alt="" />
+<div id="container">
+
+
 </div>
-<!-- JS -->
-<script src="js/vendors/trianglify.min.js"></script>
-<script src="js/vendors/TweenMax.min.js"></script>
-<script src="js/vendors/ScrollToPlugin.min.js"></script>
-<script src="js/vendors/cash.min.js"></script>
-<script src="js/card-modern-blog.js"></script>
-<script src="js/modern-blog.js"></script>
-</body>
-</html>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<style type="text/css">
+img.bg {
+  /* 브라우저의 크기에 맞게 전체 화면에 맞춘다. */
+  min-height: 100%;
+  min-width: 1024px;
+  /* 크기를 화면전체로 지정해준다. */
+  width: 100%;
+  height: auto;
+  /* 스크롤해도 배경이미지는 고정 */
+  position: fixed;
+  /* absolute;로 하면 배경도 스크롤 되지만 부자연스러워 진다. */
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px){
+   /* 그림을 브라우저의 중앙에 맞춘다. -512는 1024 의 반값으로 중앙정렬을 위한 것이다. */
+  img.bg {
+  left: 50%;
+  margin-left: -512px; }
+}
+
+div#container {
+     /* relative; 가 필수, 안하면 화면이 커지지 않는다. */
+  position: absolute; 
+}
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+<div class="cycle-slideshow"
+    cycle-slideshow data-cycle-loader="wait"
+    data-cycle-timeout=1000>
+
+<div class="cycle-slideshow"
+    data-cycle-fx=scrollHorz
+    data-cycle-timeout=2000
+>
+<div class="cycle-overlay"></div>
+<div class="cycle-pager"></div>
+ 
+
+<img onclick="javascript:location.href='introduce.html';" src="H:\캡스톤디자인\홈페이지만들기\images\lol.png"
+data-cycle-title="League of legend" 
+        data-cycle-desc=" 리그 오브 레전드 (League of legend)">
+<img onclick="javascript:location.href='http://naver.com';" src="H:\캡스톤디자인\홈페이지만들기\images\map.png"
+data-cycle-title="League of legend" 
+        data-cycle-desc="게임 모드 (Game Mode)">
+<img onclick="javascript:location.href='http://naver.com';" src="H:\캡스톤디자인\홈페이지만들기\images\weltanschauung.png"
+data-cycle-title="League of legend" 
+        data-cycle-desc="세계관 (Weltanschauung)">
+<img onclick="javascript:location.href='http://naver.com';" src="H:\캡스톤디자인\홈페이지만들기\images\champion.png"
+data-cycle-title="League of legend" 
+        data-cycle-desc="챔피언 (Champion)">
+<img onclick="javascript:location.href='http://naver.com';" src="H:\캡스톤디자인\홈페이지만들기\images\gameplay.png"
+data-cycle-title="League of legend" 
+        data-cycle-desc="게임 플레이 (Game Play)">
+<img onclick="javascript:location.href='http://naver.com';" src="H:\캡스톤디자인\홈페이지만들기\images\esports.png"
+data-cycle-title="League of legend" 
+        data-cycle-desc=" e-스포츠 (e-Sports)">
+<img onclick="javascript:location.href='http://naver.com';" src="H:\캡스톤디자인\홈페이지만들기\images\review.png"
+data-cycle-title="Making Home Page" 
+        data-cycle-desc="마무리하며 (Review) ">
+
+
+</div>
+<STYLE>
+<!--
+/* set border-box so that percents can be used for width, padding, etc (personal preference) */
+.cycle-slideshow, .cycle-slideshow * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+ 
+.cycle-slideshow { width: 500px; min-width: 200px; max-width: 500px; margin: 10px auto; padding: 0; position: relative; }
+/* slideshow images (for most of the demos, these are the actual "slides") */
+.cycle-slideshow img { 
+    /* 
+    some of these styles will be set by the plugin (by default) but setting them here
+    helps avoid flash-of-unstyled-content
+    */
+    position: absolute; top: 0; left: 0;
+    width: 100%; padding: 0; display: block;
+}
+/* in case script does not load */
+.cycle-slideshow img:first-child {
+    position: static; z-index: 100;
+}
+/* overlay */
+.cycle-overlay { 
+    font-family: tahoma, arial;
+    position: absolute; bottom: 0; width: 100%; z-index: 600;
+    background: black; color: white; padding: 15px; opacity: .5;
+}
+//-->
+</STYLE>
+<STYLE>
+.cycle-slideshow, .cycle-slideshow * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.cycle-slideshow { width: 500px; min-width: 200px; max-width: 500px; margin: 10px auto; padding: 0; position: relative;}
+.cycle-slideshow div.slide { width: 100%; height: 100% }
+.cycle-slideshow img { 
+    /* 
+    some of these styles will be set by the plugin (by default) but setting them here
+    helps avoid flash-of-unstyled-content
+    */
+    position: absolute; top: 0; left: 0;
+    width: 100%; padding: 0; display: block;
+}
+/* in case script does not load */
+.cycle-slideshow img:first-child {
+    position: static; z-index: 100;
+}
+.cycle-pager { 
+    text-align: center; width: 100%; z-index: 500; position: absolute; top: 2px; overflow: hidden;
+}
+.cycle-pager span { 
+    font-family: arial; font-size: 50px; width: 16px; height: 16px; 
+    display: inline-block; color: #ddd; cursor: pointer; 
+}
+.cycle-pager span.cycle-pager-active { color: #7a8aeb;}
+.cycle-pager > * { cursor: pointer;}
+</STYLE>
+
+<div style="width: 465px; height: 100%; margin-top: 18px; margin-right: 5px; float: left;">
+<div style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 500px; height: 30px; padding-top: 9px; padding-right: 10px; padding-left: 10px; margin-bottom: 5px;"><div style="width: 70px; height: 25px; float: left;"><a href="https://www.sau.ac.kr" target="_blank"><img id="" ="" src="H:\캡스톤디자인\홈페이지만들기\images\sau.png" style="" ></a></div>
+
+<div style="width: 280px; height: 25px; float: left;"><marquee style="top: 3px; font-size: 9pt;" scrolldelay="100" scrollamount="2"><a style="color: rgb(245, 18, 82); text-decoration: none; margin-right: 255px;" href="http://naver.com/" target="_blank">이미지 클릭시 페이지로 이동합니다!^^</a><a style="color: rgb(245, 18, 82); text-decoration: none;" href="http://cafe.naver.com/" target="_blank">방문해 주셔서 감사합니다</a></marquee></div><div style="width: 120px; height: 25px; text-align: right; color: rgb(153, 153, 153); padding-left: 3px; font-size: 8pt; float: left;"><a style="color: rgb(85, 85, 85); text-decoration: none;" href="https://www.facebook.com/profile.php?id=100004174810588" target="_blank">페이스북</a> ┃ <a style="color: rgb(85, 85, 85); text-decoration: none;" href="H:\캡스톤디자인\홈페이지만들기\images\kakaoid.jpg" target="_blank"> 카카오톡</a> </div></div>
+
+<br>
+<font size=2 face="맑은 고딕" color="black">[전자정보 통신과] 장종환 21403034 / 2018.05.27 </font></br>
+
+
+
+
+
