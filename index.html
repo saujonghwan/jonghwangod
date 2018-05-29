@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+
+<title> Jong's Pages </title> <!-- 타이틀 -->
+
+<img class="bg" src="images\background.jpg" alt="" /> <!-- 백그라운드 -->
+<div id="container">
+<br>
+<br>
+<br>
+<div align=""><img id="" src="images\travel.gif" style="" > <!-- 상단 로고 -->
+
+</div>
+<br>
+<br>
+<!-- 메인 백그라운드 설정 -->
+<style type="text/css">
+img.bg 
+{
+  min-height: 100%; /* 브라우저의 크기에 맞게 조정 */
+  min-width: 1024px; /* 크기를 화면전체로 지정해준다. */
+  width: 100%;
+  height: auto; /* 스크롤해도 배경이미지는 고정 */
+  position: fixed;  /* absolute 스크롤 */
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px)
+{
+  img.bg {  left: 50%;  margin-left: -512px; }
+}
+
+div#container 
+{
+  position: absolute;  /* relative; */
+}
+</style>
+
+<!-- 노건들 이미지 슬라이드 용 -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+<!-- 노건들 이미지 슬라이드 용 -->
+
+<div class="cycle-slideshow"
+    cycle-slideshow data-cycle-loader="wait"
+    data-cycle-timeout=1000>
+
+<div class="cycle-slideshow"
+    data-cycle-fx=scrollHorz
+    data-cycle-timeout=2000
+>
+<div class="cycle-overlay"></div>
+<div class="cycle-pager"></div>
+ 
+
+<img onclick="javascript:location.href='introduce.html';" src="images\introduce.png"
+data-cycle-title="Introduce" 
+        data-cycle-desc=" 블로그 소개 ">
+<img onclick="javascript:location.href='guide.html';" src="images\guide.png"
+data-cycle-title="Travel Guide" 
+        data-cycle-desc="여행 가이드">
+<img onclick="javascript:location.href='jp1.html';" src="images\fukuoka.png"
+data-cycle-title="日本-福岡(Japan, Fukuoka)" 
+        data-cycle-desc="후쿠오카 여행">
+<img onclick="javascript:location.href='jp2.html';" src="images\tokyo1.png"
+data-cycle-title="日本-東京(Japan, Tokyo)" 
+        data-cycle-desc="도쿄 여행">
+<img onclick="javascript:location.href='jp3.html';" src="images\tokyo2.png"
+data-cycle-title="日本-東京(Japan, Tokyo)" 
+        data-cycle-desc="도쿄 여행">
+<img onclick="javascript:location.href='paris.html';" src="images\paris.png"
+data-cycle-title="France-Paris(France, Paris)" 
+        data-cycle-desc="파리 여행">
+<img onclick="javascript:location.href='review.html';" src="images\review.png"
+data-cycle-title="Making Home Page" 
+        data-cycle-desc="마무리하며 (Review) ">
+</div>
+
+<STYLE>
+<!--
+.cycle-slideshow, .cycle-slideshow * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+ 
+.cycle-slideshow { width: 500px; min-width: 200px; max-width: 500px; margin: 10px auto; padding: 0; position: relative; }
+.cycle-slideshow img 
+{ 
+    position: absolute; top: 0; left: 0;
+    width: 100%; padding: 0; display: block;
+}
+
+.cycle-slideshow img:first-child 
+{
+    position: static; z-index: 100;
+}
+.cycle-overlay 
+{ 
+    font-family: tahoma, arial;
+    position: absolute; bottom: 0; width: 100%; z-index: 600;
+    background: black; color: white; padding: 15px; opacity: .5;
+}
+//-->
+</STYLE>
+
+
+<STYLE>
+.cycle-slideshow, .cycle-slideshow * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.cycle-slideshow { width: 500px; min-width: 200px; max-width: 500px; margin: 10px auto; padding: 0; position: relative;}
+.cycle-slideshow div.slide { width: 100%; height: 100% }
+.cycle-slideshow img 
+{ 
+    position: absolute; top: 0; left: 0;
+    width: 100%; padding: 0; display: block;
+}
+.cycle-slideshow img:first-child 
+{
+    position: static; z-index: 100;
+} /* static 기본속성 absolute 부모 기준으로 relative */
+.cycle-pager 
+{ 
+    text-align: center; width: 100%; z-index: 500; position: absolute; top: 2px; overflow: hidden;
+} /* 버튼 위치 width 좌우 top 높낮이*/
+.cycle-pager span 
+{ 
+    font-family: arial; font-size: 50px; width: 16px; height: 16px;  /* 동그라미 크기 */
+    display: inline-block; color: #ddd; cursor: pointer; 
+} /* Crosshair , Default , Pointer , Move 모양 */
+.cycle-pager span.cycle-pager-active { color: #7a8aeb;} /* 동그라미 색깔 */
+.cycle-pager > * { cursor: pointer;}
+</STYLE>
+
+
+<!-- sau로고 -->
+<div style="width: 465px; height: 100%; margin-top: 18px; margin-right: 5px; float: left;">
+<div style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 500px; height: 30px; padding-top: 9px; padding-right: 10px; padding-left: 10px; margin-bottom: 5px;">
+<div style="width: 70px; height: 25px; float: left;">
+<a href="https://sau.ac.kr" target="_blank"><img id="" src="images\sau.png" style=""></a></div>
+
+<!-- 라디오 멘트 시작했다 -->
+<div style="width: 280px; height: 25px; float: left;"><marquee style="top: 3px; font-size: 9pt;" scrolldelay="100" scrollamount="2"><a style="color: rgb(245, 18, 82); text-decoration: none; margin-right: 255px;" href="http://whdrha23.ivyro.net/index.html" target="_blank">이미지 클릭시 페이지로 이동합니다!^^</a>
+<a style="color: rgb(245, 18, 82); text-decoration: none;" href="http://whdrha23.ivyro.net/index.html" target="_blank">방문해 주셔서 감사합니다</a></marquee></div>
+<div style="width: 120px; height: 25px; text-align: right; color: rgb(153,153, 153); padding-left: 3px; font-size: 8pt; float: left;">
+<a style="color: rgb(85, 85, 85); text-decoration: none;" href="https://www.facebook.com/profile.php?id=100004174810588" target="_blank">페이스북</a> ┃ <a style="color: rgb(85, 85, 85); text-decoration: none;" href="images\kakaoid.jpg" target="_blank"> 카카오톡</a> </div></div>
+<!-- 라디오 멘트 끝났다 -->
+
+<br>
+<font size=2 face="맑은 고딕" color="black">[전자정보 통신과] 장종환 21403034 / 2018.05.27 </font></br>
+
+

@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+
+<title> Paris - France</title>
+
+<body style="background-color:#000000;"></body> <!-- 백그라운드 -->
+
+<!-- 상단 sau로고 -->
+<div style="border: 1px solid rgb(0, 0, 0); 
+border-image: none; 
+width: 500px; height: 30px; 
+padding-top: 9px; padding-right: 10px; padding-left: 10px; margin-bottom: 5px;">
+<div style="width: 70px; height: 25px; float: left;">
+<a href="http://sau.ac.kr/" target="_blank"><img id="" src="images\sau.png" style="" ></a></div>
+<br>
+
+
+<!-- 노건들 -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="http://malsup.github.io/jquery.cycle2.js"></script>
+<script src="http://malsup.github.io/jquery.cycle2.flip.js"></script>
+<!-- 노건들 -->
+
+<STYLE>
+.cycle-slideshow { 
+    background: none;
+    -webkit-perspective: 1000;
+    -webkit-transform-style: preserve-3d;
+    -moz-perspective: 1000;
+    -moz-transform-style: preserve-3d;
+    -o-perspective: 1000;
+    -o-transform-style: preserve-3d;
+    perspective: 1000;
+    transform-style: preserve-3d;  
+}
+</STYLE>
+<STYLE>
+.cycle-slideshow, .cycle-slideshow * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.cycle-slideshow { width: 500px; min-width: 200px; max-width: 500px; margin: 10px auto; padding: 0; position: relative;}  /* 사진 크기 */
+.cycle-slideshow div.slide { width: 100%; height: 100% }
+.cycle-slideshow img 
+{     
+    position: absolute; top: 0; left: 0;
+    width: 100%; padding: 0; display: block;
+}
+.cycle-slideshow img:first-child {
+    position: static; z-index: 100;
+} /* static 기본속성 absolute 부모 기준으로 relative */
+.cycle-pager { 
+    text-align: center; width: 100%; z-index: 500; position: absolute; top: 360px; overflow: hidden;
+} /* 버튼 위치 width 좌우 top 높낮이*/
+.cycle-pager span { 
+    font-family: arial; font-size: 50px; width: 16px; height: 16px; /* 동굴뱅이 크기 */
+    display: inline-block; color: #ddd; cursor: Crosshair; 
+} /* Crosshair , Default , Pointer , Move 모양 */
+.cycle-pager span.cycle-pager-active { color: #E1A6C8;} /* 똥골뱅이 색깔 */
+.cycle-pager > * { cursor: pointer;}
+</STYLE> 
+<div class="cycle-slideshow" 
+    data-cycle-fx=flipVert
+    data-cycle-timeout=4000
+    data-cycle-speed=1000
+    data-cycle-pager="#pager"
+    >
+    <img src="images\pa1.png">
+    <img src="images\pa2.png">
+    <img src="images\pa3.png">
+    <img src="images\pa4.png">
+    <img src="images\pa5.png">
+    <img src="images\pa6.png">
+    <img src="images\pa7.png">
+    <img src="images\pa8.png">
+    <img src="images\pa9.png">
+    <div class="center cycle-pager" id=pager></div>
+</div>
+
+<br>
+<br>
+
+
+<img class="bg" src="images\pabg.png" alt="" /> <!-- 백틀그라운드 -->
+
+<!-- 페이지이동 버튼 시작 긔기띵 -->
+<html>
+<head>
+<title>button</title>
+<meta name="generator" content="Namo Image Slicer v 1.5">
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="purple" alink="red">
+<table border="0" cellpadding="0" cellspacing="0" width="700" height="100">
+	<tr>
+		<td colspan="10" width="700" height="12"><img src="images/bt0.png" border="0"></td>
+		<td width="1" height="12"></td>
+	</tr>
+	<tr>
+		<td rowspan="2" width="161" height="88"><img src="images/bt1.png" border="0"></td>
+		<td width="44" height="60"><a href="introduce.html"><img src="images/bt2.png" border="0"></a></td>
+		<td width="47" height="60"><a href="guide.html"><img src="images/bt3.png" border="0"></a></td>
+		<td width="48" height="60"><a href="jp1.html"><img src="images/bt4.png" border="0"></a></td>
+		<td width="56" height="60"><a href="index.html"><img src="images/bt5.png" border="0"></a></td>
+		<td width="45" height="60"><a href="jp2.html"><img src="images/bt6.png" border="0"></a></td>
+		<td width="49" height="60"><a href="jp3.html"><img src="images/bt7.png" border="0"></a></td>
+		<td width="49" height="60"><a href="paris.html"><img src="images/bt8_1.png" border="0"></a></td>
+		<td width="43" height="60"><a href="review.html"><img src="images/bt9.png" border="0"></a></td>
+		<td rowspan="2" width="158" height="88"><img src="images/bt10.png" border="0"></td>
+		<td width="1" height="60"></td>
+	</tr>
+	<tr>
+		<td colspan="8" width="381" height="28"><img src="images/bt11.png" border="0"></td>
+		<td width="1" height="28"></td>
+	</tr>
+	<tr>
+		<td width="161" height="1"></td>
+		<td width="44" height="1"></td>
+		<td width="47" height="1"></td>
+		<td width="48" height="1"></td>
+		<td width="56" height="1"></td>
+		<td width="45" height="1"></td>
+		<td width="49" height="1"></td>
+		<td width="49" height="1"></td>
+		<td width="43" height="1"></td>
+		<td width="158" height="1"></td>
+	</tr>
+</table>
+</body>
+</html>
+<!-- 페이지이동 버튼 끝 -->
+
+<div class="xans-element- xans-layout xans-layout-bottom "><div class="gotop"><a href="#"><img src="images/topbutton.png" alt="top"/></a></div> <!-- 상단으로ㄱㄱ -->

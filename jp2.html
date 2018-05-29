@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+
+<title> Jong's Pages </title>
+
+
+<body style="background-color:#000000;"></body> <!-- 백그라운드 -->
+
+<!-- 노건들 -->
+<style>.adsbygoogle { display: block; margin:auto }</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="http://malsup.github.io/jquery.cycle2.js"></script>
+<script src="http://malsup.github.io/jquery.cycle2.carousel.js"></script>
+<script>$.fn.cycle.defaults.autoSelector = '.slideshow';</script>
+<!-- 노건들 -->
+
+<STYLE>
+.slideshow { margin: auto }
+.slideshow img { width: 400px; height: 300px; padding: 5px; } /* 사진 크기 조정 */
+div.responsive img { width: auto; height: auto }
+.cycle-pager { position: static; margin-top: 5px }
+div.vertical { width: 100px }
+</STYLE>
+<STYLE>
+.cycle-slideshow, .cycle-slideshow * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.cycle-slideshow { width: 300px; min-width: 200px; max-width: 500px; margin: 10px auto; padding: 0; position: relative;} 
+.cycle-slideshow div.slide { width: 100%; height: 100% }
+.cycle-slideshow img 
+{     
+    position: absolute; top: 0; left: 0;
+    width: 100%; padding: 0; display: block;
+}
+.cycle-slideshow img:first-child {
+    position: static; z-index: 100;
+} /* static 기본속성 absolute 부모 기준으로 relative */
+.cycle-pager { 
+    text-align: center; width: 80%; z-index: 500; position: absolute; top: 300px; overflow: hidden;
+} /* 버튼 위치 width 좌우 top 높낮이*/
+.cycle-pager span { 
+    font-family: arial; font-size: 50px; width: 16px; height: 16px; /* 동그라미 크기 */
+    display: inline-block; color: #ddd; cursor: Crosshair; 
+} /* Crosshair , Default , Pointer , Move 모양 */
+.cycle-pager span.cycle-pager-active { color: #E1A6C8;} /* 동그라미 색깔 */
+.cycle-pager > * { cursor: pointer;}
+</STYLE> 
+
+
+<div class="slideshow" 
+    data-cycle-fx=carousel
+    data-cycle-timeout=0
+    data-cycle-carousel-visible=5
+    data-cycle-pager="#pager"    >
+
+    <img src="images\tk9.png">
+    <img src="images\tk1.png">
+    <img src="images\tk2.png">
+    <img src="images\tk3.png">
+    <img src="images\tk4.png">
+    <img src="images\tk5.png">
+    <img src="images\tk6.png">
+    <img src="images\tk7.png">
+    <img src="images\tk8.png">
+</div>
+<div class="cycle-pager" id=pager></div>
+<p>
+</p>
+
+<img class="bg" src="images/tkbg.png" alt="" />
+<div id="container">
+
+</div>
+
+<!-- 페이지이동 버튼 시작 -->
+<html>
+<head>
+<title>button</title>
+<meta name="generator" content="Namo Image Slicer v 1.5">
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="purple" alink="red">
+<table border="0" cellpadding="0" cellspacing="0" width="700" height="100">
+	<tr>
+		<td colspan="10" width="700" height="12"><img src="images/bt0.png" border="0"></td>
+		<td width="1" height="12"></td>
+	</tr>
+	<tr>
+		<td rowspan="2" width="161" height="88"><img src="images/bt1.png" border="0"></td>
+		<td width="44" height="60"><a href="introduce.html"><img src="images/bt2.png" border="0"></a></td>
+		<td width="47" height="60"><a href="guide.html"><img src="images/bt3.png" border="0"></a></td>
+		<td width="48" height="60"><a href="jp1.html"><img src="images/bt4.png" border="0"></a></td>
+		<td width="56" height="60"><a href="index.html"><img src="images/bt5.png" border="0"></a></td>
+		<td width="45" height="60"><a href="jp2.html"><img src="images/bt6_1.png" border="0"></a></td>
+		<td width="49" height="60"><a href="jp3.html"><img src="images/bt7.png" border="0"></a></td>
+		<td width="49" height="60"><a href="paris.html"><img src="images/bt8.png" border="0"></a></td>
+		<td width="43" height="60"><a href="review.html"><img src="images/bt9.png" border="0"></a></td>
+		<td rowspan="2" width="158" height="88"><img src="images/bt10.png" border="0"></td>
+		<td width="1" height="60"></td>
+	</tr>
+	<tr>
+		<td colspan="8" width="381" height="28"><img src="images/bt11.png" border="0"></td>
+		<td width="1" height="28"></td>
+	</tr>
+	<tr>
+		<td width="161" height="1"></td>
+		<td width="44" height="1"></td>
+		<td width="47" height="1"></td>
+		<td width="48" height="1"></td>
+		<td width="56" height="1"></td>
+		<td width="45" height="1"></td>
+		<td width="49" height="1"></td>
+		<td width="49" height="1"></td>
+		<td width="43" height="1"></td>
+		<td width="158" height="1"></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>
+<!-- 페이지이동 버튼 끝 -->
+
+<div class="xans-element- xans-layout xans-layout-bottom "><div class="gotop"><a href="#"><img src="images/topbutton.png" alt="top"/></a></div> <!-- 상단으로 -->
